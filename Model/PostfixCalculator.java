@@ -2,7 +2,13 @@ package Model;
 
 import java.util.ArrayList;
 
-public class PostfixCalculator implements IPostfixCalculator {
+public class PostfixCalculator<T> implements IPostfixCalculator {
+
+    public PostfixCalculator() {
+
+    }
+
+    private ArrayList<T> Data = new ArrayList<>();
 
     @Override
     public int Calculate(ArrayList postfix_expression) throws Exception {
@@ -11,5 +17,7 @@ public class PostfixCalculator implements IPostfixCalculator {
     }
 
     
+
+
     
 }
