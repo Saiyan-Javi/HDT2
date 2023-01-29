@@ -31,6 +31,17 @@ public class MainCalculadora {
         opc1 = teclado.nextLine();
         teclado.nextLine(); ///Aqui ingresa la direccion del archivo 
         teclado.close();
+        
+        // Esto es el case para los números 
+
+        ///char caracter = '@'; aqui deberia estar la lista de los números y que vaya verifiando cada uno de ellos 
+        int representacion = (int) caracter;
+        
+        If (representacion < 57); and (representacion > 48);
+            //toma los número de la pila y los almacena 
+        ElseIf (representacion == 42, 43, 45 , 47);
+            //cuenta como operador y toma 2 valores 
+        
     }
 }
             
