@@ -4,5 +4,5 @@ Hoja de Trabajo 2
 Integrantes:
 - Héctor Penedo 22217
 - Javier Chiquín 22103
-- Nelson Estuardo 22046
+- Nelson Escalante 22046
 - José Morales 22689
