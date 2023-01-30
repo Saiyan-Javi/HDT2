@@ -23,9 +23,8 @@ public class MainCalculadora {
         String opc1;
 
         System.out.println(menu1);
+        System.out.println("Ingrese la dirección de archivo.");
         opc1 = teclado.nextLine();
-        teclado.nextLine(); ///Aqui ingresa la direccion del archivo 
-        teclado.close();
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(opc1));
@@ -38,6 +37,10 @@ public class MainCalculadora {
         } catch (IOException e) {
             System.out.println("No se ha encontrado el archivo a leer. Por favor, agrege uno al directorio.");
         }
+
+        System.out.println(operaciones);
+        teclado.close();
+
 
         miCalculadora.Calculate(operaciones);
         
