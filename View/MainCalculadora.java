@@ -1,8 +1,5 @@
 package View;
 import java.util.Scanner;
-
-import javax.print.DocFlavor.STRING;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -16,7 +13,7 @@ public class MainCalculadora {
         Scanner teclado = new Scanner(System.in);
         ArrayList<String> operaciones = new ArrayList<String>();
 
-        IPostfixCalculator<String> miCalculadora = new PostfixCalculator();
+        IPostfixCalculator<String> miCalculadora = new PostfixCalculator<>();
 
 
         String menu1 = "\n ************** Bienvenido a nuestra calculadora ***********";
