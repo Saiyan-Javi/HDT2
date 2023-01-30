@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.util.ArrayList;
+import Model.PostfixCalculator;
 
 public class MainCalculadora {
     public static void main(String[] args) {
@@ -28,19 +29,13 @@ public class MainCalculadora {
         String opc1;
 
         System.out.println(menu1);
-        opc1 = teclado.nextLine();
-        teclado.nextLine(); ///Aqui ingresa la direccion del archivo 
+        System.out.println("Las expresiones a evaluar son:");
+        for (String s : operaciones) {
+            System.out.println(s);
+        }
+        //Imprimir los resultados aquí.
+        System.out.println();
         teclado.close();
-        
-        // Esto es el case para los números 
-
-        ///char caracter = '@'; aqui deberia estar la lista de los números y que vaya verifiando cada uno de ellos 
-        int representacion = (int) caracter;
-        
-        If (representacion < 57); and (representacion > 48);
-            //toma los número de la pila y los almacena 
-        ElseIf (representacion == 42, 43, 45 , 47);
-            //cuenta como operador y toma 2 valores 
         
     }
 }
