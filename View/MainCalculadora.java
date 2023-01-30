@@ -30,7 +30,6 @@ public class MainCalculadora {
             BufferedReader reader = new BufferedReader(new FileReader(opc1));
             String line;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);
                 operaciones.add(line);
             }
             reader.close();
@@ -38,11 +37,20 @@ public class MainCalculadora {
             System.out.println("No se ha encontrado el archivo a leer. Por favor, agrege uno al directorio.");
         }
 
+        System.out.println("Las operaciones encontradas en el archivo son:");
         System.out.println(operaciones);
         teclado.close();
 
+        for (String s : operaciones) {
+            String[] operacion = s.split("");
+            ArrayList<String> calculo = new ArrayList<>();
+            for (String op : operacion) {
+                System.out.println(op);
+                calculo.add(op);
+            }
+            miCalculadora.Calculate(calculo);
+        }
 
-        miCalculadora.Calculate(operaciones);
         
         // Esto es el case para los números 
 

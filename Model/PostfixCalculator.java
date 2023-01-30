@@ -12,9 +12,15 @@ public class PostfixCalculator<T> implements IPostfixCalculator<T> {
 
     }
 
+    private void setData(ArrayList<T> data) {
+        this.Data = data;
+    }
+
     /* Los datos ya vienen en ASCII desde el DriverTest. */
     @Override
     public int Calculate(ArrayList<T> postfix_expression) throws Exception {
+
+        setData(postfix_expression);
 
         switch((int) Data.get(0)) {
 
