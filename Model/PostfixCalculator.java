@@ -14,7 +14,7 @@ public class PostfixCalculator<T> implements IPostfixCalculator<T> {
 
     /* Los datos ya vienen en ASCII desde el DriverTest. */
     @Override
-    public int Calculate(ArrayList postfix_expression) throws Exception {
+    public int Calculate(ArrayList<T> postfix_expression) throws Exception {
 
         switch((int) Data.get(0)) {
 
