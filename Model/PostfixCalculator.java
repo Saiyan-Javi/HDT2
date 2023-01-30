@@ -2,7 +2,7 @@ package Model;
 
 import java.util.ArrayList;
 
-public class PostfixCalculator<T> implements IPostfixCalculator {
+public class PostfixCalculator<T> implements IPostfixCalculator<T> {
 
     private ArrayList<T> Data = new ArrayList<T>();
     private int res;
