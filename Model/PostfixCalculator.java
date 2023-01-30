@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PostfixCalculator<T> implements IPostfixCalculator<T> {
 
-    private ArrayList<T> Data = new ArrayList<T>();
+    private ArrayList<T> Data = new ArrayList<>();
     private int res;
     
     
@@ -22,7 +22,17 @@ public class PostfixCalculator<T> implements IPostfixCalculator<T> {
 
         setData(postfix_expression);
 
-        switch((int) Data.get(0)) {
+        for (T t : Data) {
+            try {
+                int a = Integer.parseInt(t.toString());
+                System.out.print("Este dígito es " + a + "\n");
+            } catch (NumberFormatException e) {
+                System.out.println("Halle el símbolo " + t + "\n");
+                //ES SíMBOLO
+            }
+        }
+
+        /*switch( Data.get(0)) {
 
             case 48:{
                 //Data.add(T);
@@ -49,7 +59,7 @@ public class PostfixCalculator<T> implements IPostfixCalculator<T> {
             } break;
 
         }
-
+        /
         /* Estos son los remanentes de cómo lo había hecho antes. */
 
         /*if((int) Data.get(0) == 43)  {
