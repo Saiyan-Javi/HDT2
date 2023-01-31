@@ -45,7 +45,8 @@ public class MainCalculadora {
                 System.out.println(op);
                 calculo.add(op);
             }
-            miCalculadora.Calculate(calculo);
+            int resultado = miCalculadora.Calculate(calculo);
+            System.out.println("El resultado de la operación es: " + resultado);
         }
 
         
