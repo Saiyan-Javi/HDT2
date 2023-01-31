@@ -74,25 +74,6 @@ public class PostfixCalculator<T> implements IPostfixCalculator<T> {
                 }
             }
         }
-
-        /* Estos son los remanentes de cómo lo había hecho antes. */
-
-        /*if((int) Data.get(0) == 43)  {
-            int suma = (int) Data.get(0) + (int) Data.get(1);
-            res = suma;
-
-        } else if((int) Data.get(0) == 45) {
-            int resta = (int) Data.get(0) - (int) Data.get(1);
-            res = resta;
-
-        } else if((int) Data.get(0) == 42)  {
-            int mul = (int) Data.get(0) * (int) Data.get(1);
-            res = mul;
-        } else if((int) Data.get(0) == 47)  {
-            int div = (int) Data.get(0) / (int) Data.get(1);
-            res = div;
-
-        }*/
         
         System.out.print(Data);
         return res;    

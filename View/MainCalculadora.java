@@ -19,10 +19,12 @@ public class MainCalculadora {
         String menu1 = "\n ************** Bienvenido a nuestra calculadora ***********";
         String opc1;
 
+        // Printing the menu and asking for the user to input the file name.
         System.out.println(menu1);
         System.out.println("Ingrese la dirección de archivo.");
         opc1 = teclado.nextLine();
 
+        // Reading the file and adding each line to the arraylist.
         try {
             BufferedReader reader = new BufferedReader(new FileReader(opc1));
             String line;
@@ -34,10 +36,12 @@ public class MainCalculadora {
             System.out.println("No se ha encontrado el archivo a leer. Por favor, agrege uno al directorio.");
         }
 
+        // Printing the operations found in the file.
         System.out.println("Las operaciones encontradas en el archivo son:");
         System.out.println(operaciones);
         teclado.close();
 
+        // Taking the operations from the file and splitting them into individual characters.
         for (String s : operaciones) {
             String[] operacion = s.split("");
             ArrayList<String> calculo = new ArrayList<>();
