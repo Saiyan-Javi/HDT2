@@ -1,4 +1,4 @@
-//package View;
+package View;
 import java.util.Scanner;
 
 import org.junit.Test;
@@ -11,8 +11,8 @@ import static org.junit.Assert.assertEquals;
 import java.io.BufferedReader;
 import java.util.ArrayList;
 
-//import Model.IPostfixCalculator;
-//import Model.PostfixCalculator;
+import Model.IPostfixCalculator;
+import Model.PostfixCalculator;
 
 public class MainCalculadora {
     public static void main(String[] args) throws Exception {
