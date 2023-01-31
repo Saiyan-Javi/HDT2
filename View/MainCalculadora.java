@@ -1,12 +1,18 @@
-package View;
+//package View;
 import java.util.Scanner;
+
+import org.junit.Test;
+
 import java.io.FileReader;
 import java.io.IOException;
+
+import static org.junit.Assert.assertEquals;
+
 import java.io.BufferedReader;
 import java.util.ArrayList;
 
-import Model.IPostfixCalculator;
-import Model.PostfixCalculator;
+//import Model.IPostfixCalculator;
+//import Model.PostfixCalculator;
 
 public class MainCalculadora {
     public static void main(String[] args) throws Exception {
@@ -62,5 +68,26 @@ public class MainCalculadora {
         }*/
         
     }
+
+    @Test
+    public void pruebaCalculate(){
+        IPostfixCalculator<String> miCalculadora = new PostfixCalculator<>();
+        ArrayList<String> operaciones = new ArrayList<String>();
+        operaciones.add("41839/-+*");
+        for (String s : operaciones) {
+            String[] operacion = s.split("");
+            ArrayList<String> calculo = new ArrayList<>();
+            for (String op : operacion) {
+                System.out.println(op);
+                calculo.add(op);
+            }
+            try {
+                assertEquals(-16, miCalculadora.Calculate(calculo));
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+
 }
-            
