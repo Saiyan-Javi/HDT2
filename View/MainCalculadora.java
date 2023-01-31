@@ -1,3 +1,11 @@
+/* 
+ * Hoja de Trabajo 2
+ * Héctor Penedo, 22217
+ * Javier Chiquín, 22103
+ * Nelson Escalante 22046
+ * José Morales 22689
+ */
+
 package View;
 import java.util.Scanner;
 
