@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"Model","c":"PostfixCalculator","l":"Calculate(ArrayList<T>)","u":"Calculate(java.util.ArrayList)"},{"p":"Model","c":"PostfixCalculator","l":"PostfixCalculator()","u":"%3Cinit%3E()"}];updateSearchResults();

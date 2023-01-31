@@ -43,34 +43,27 @@ public class MainCalculadora {
         }
 
         // Printing the operations found in the file.
-        System.out.println("Las operaciones encontradas en el archivo son:");
-        System.out.println(operaciones);
-        teclado.close();
+        if(operaciones.isEmpty() == false) {
+            System.out.println("Las operaciones encontradas en el archivo son:");
+            System.out.println(operaciones);
+            teclado.close();
+
+        } else {
+            System.out.println("No hay operaciones válidas.");
+        }
 
         // Taking the operations from the file and splitting them into individual characters.
         for (String s : operaciones) {
             String[] operacion = s.split("");
             ArrayList<String> calculo = new ArrayList<>();
             for (String op : operacion) {
-                System.out.println(op);
+                //System.out.println(op);
                 calculo.add(op);
             }
             int resultado = miCalculadora.Calculate(calculo);
             System.out.println("El resultado de la operación es: " + resultado);
         }
 
-        
-        // Esto es el case para los números 
-
-        ///char caracter = '@'; aqui deberia estar la lista de los números y que vaya verifiando cada uno de ellos 
-      /*  int representacion = new operaciones;
-        
-        if (representacion <= 57 && representacion >= 48) {
-            //toma los número de la pila y los almacena 
-        } else if (representacion == 42 ||  representacion == 43 || representacion == 45 || representacion == 47) {
-            //cuenta como operador y toma 2 valores 
-        }*/
-        
     }
 
     @Test
@@ -82,7 +75,7 @@ public class MainCalculadora {
             String[] operacion = s.split("");
             ArrayList<String> calculo = new ArrayList<>();
             for (String op : operacion) {
-                System.out.println(op);
+                //System.out.println(op);
                 calculo.add(op);
             }
             try {
